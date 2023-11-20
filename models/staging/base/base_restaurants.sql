@@ -1,0 +1,1 @@
+SELECT IDENTIFIER as RESTAURANT_IDENTIFIER, NAME, ADDRESS  from {{ source('dbt_ippon_training','RESTAURANTS') }}

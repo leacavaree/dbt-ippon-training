@@ -1,0 +1,1 @@
+SELECT NAME from {{ source('dbt_ippon_training','RESTAURANTS') }} WHERE OPEN_ON_SUNDAY = true

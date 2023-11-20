@@ -1,0 +1,1 @@
+SELECT SUM(NB_EMPLOYEES) as SUM_EMPLOYEES FROM {{ source('dbt_ippon_training','RESTAURANTS') }}
