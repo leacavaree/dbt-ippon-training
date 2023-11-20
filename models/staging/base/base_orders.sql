@@ -1,0 +1,1 @@
+SELECT DISTINCT(IDENTIFIER), RESTAURANT_IDENTIFIER, AMOUNT, payment_method from {{ source('dbt_ippon_training','ORDERS') }}

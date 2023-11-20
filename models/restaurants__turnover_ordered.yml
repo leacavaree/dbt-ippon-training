@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: restaurants_turnover_ordered
+    description: This table contains the turnover of each restaurant ordered
+
+    columns:
+      - name: turnover
+        description: Total turnover of the restaurant
+        tests:
+          - positive_column:
+                severity: warn
