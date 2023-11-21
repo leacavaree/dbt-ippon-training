@@ -2,7 +2,6 @@ version: 2
 
 sources:
   - name: dbt_ippon_training
-    database: DB_DBT_LCAVAREE_DEV
     schema: SOURCE
     tables:
       - name: RESTAURANTS
