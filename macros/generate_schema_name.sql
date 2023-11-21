@@ -1,7 +1,7 @@
 {% macro default__generate_schema_name(custom_schema_name, node) -%}
 
     {%- set default_schema = target.schema -%}
-    {%- set target_name = tager.name.lower() -%}
+    {%- set target_name = target.name.lower() -%}
 
     {%- if custom_schema_name is none -%}
 
