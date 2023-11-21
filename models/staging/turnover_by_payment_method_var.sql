@@ -1,6 +1,6 @@
 --{%set payment_methods = ['card', 'cheque']%}
 {% set payment_methods_query %}
-select distinct payment_method from {{ source('dbt_ippon_training','ORDERS') }}
+select distinct payment_method from {{ mockable_source('dbt_ippon_training','ORDERS', 'sample_orders') }}
 {% endset %}
 
 {% if execute %}

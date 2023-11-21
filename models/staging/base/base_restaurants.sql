@@ -1,1 +1,1 @@
-SELECT IDENTIFIER as RESTAURANT_IDENTIFIER, NAME, ADDRESS  from {{ source('dbt_ippon_training','RESTAURANTS') }}
+SELECT IDENTIFIER as RESTAURANT_IDENTIFIER, NAME, ADDRESS  from {{ mockable_source('dbt_ippon_training','RESTAURANTS', 'sample_restaurants') }}
