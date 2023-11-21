@@ -1,1 +1,1 @@
-SELECT DISTINCT(IDENTIFIER), RESTAURANT_IDENTIFIER, AMOUNT, payment_method from {{ source('dbt_ippon_training','ORDERS') }}
+SELECT DISTINCT(IDENTIFIER), RESTAURANT_IDENTIFIER, AMOUNT, payment_method from {{ mockable_source('dbt_ippon_training','ORDERS', 'sample_orders') }}
