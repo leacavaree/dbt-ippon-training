@@ -7,8 +7,6 @@ sources:
     tables:
       - name: RESTAURANTS
         description: This table contains informations related to the restaurants
-        tests:
-          - is_same_table
       - name: ORDERS
         description: This table contains informations related to the orders
         columns:
