@@ -1,3 +1,10 @@
+{{
+    config(
+        materialized='incremental',
+        unique_key= 'identifier'
+    )
+}}
+
 select
     identifier
     , name
@@ -5,4 +12,4 @@ select
     , production_cost
     , type
 from
-    {{ source('sources', 'dishes') }}
+    {{ source('dbt_ippon_training', 'DISHES') }}

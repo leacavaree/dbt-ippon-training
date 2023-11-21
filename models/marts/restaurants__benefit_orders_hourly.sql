@@ -1,9 +1,3 @@
-{{
-    config(
-        materialized='incremental'
-    )
-}}
-
 select
     d.identifier
     , d.name

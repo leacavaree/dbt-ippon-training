@@ -10,3 +10,5 @@ sources:
         description: This table contains informations related to the orders
         columns:
           - name: turnover
+      - name: DISHES
+        description: This table contains informations related to the dishes
