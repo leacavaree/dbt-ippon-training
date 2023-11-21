@@ -7,7 +7,7 @@
 
         {{ default_schema }}
 
-    {%- elif taget_name == 'prod' -%}
+    {%- elif target_name == 'prod' -%}
 
         {{ custom_schema_name | trim }}
 
